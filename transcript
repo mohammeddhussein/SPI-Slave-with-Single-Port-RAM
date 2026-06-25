@@ -1,0 +1,70 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 23:45:16 on Mar 15,2026
+# vlog -reportprogress 300 "+acc" rtl/FSM.sv rtl/SPI_TOP.sv rtl/RAM.v rtl/deser.v rtl/ser.v tb/SPI_TB.sv tb/ser_tb.sv 
+# -- Compiling module FSM
+# -- Compiling module SPI_TOP
+# -- Compiling module RAM
+# -- Compiling module deser
+# -- Compiling module ser
+# -- Compiling module SPI_TB
+# -- Compiling module ser_tb
+# 
+# Top level modules:
+# 	SPI_TB
+# 	ser_tb
+# End time: 23:45:16 on Mar 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim -gui "+acc" work.SPI_TB 
+# Start time: 23:45:16 on Mar 15,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
+# Loading sv_std.std
+# Loading work.SPI_TB(fast)
+# Loading work.SPI_TOP(fast)
+# Loading work.RAM(fast)
+# Loading work.ser(fast)
+# Loading work.deser(fast)
+# Loading work.FSM(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fahim  Hostname: SE7S  ProcessID: 22460
+#           Attempting to use alternate WLF file "./wlft2basqz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2basqz
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x32
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xb8
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xac
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xbe
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x49
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xd2
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x33
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x5e
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x14
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x93
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x1e
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x82
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xea
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xe3
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0x27
+# DATA has been SUCCESSFULLY transmitted! Its Value: 0xa2
+# ** Note: $stop    : tb/SPI_TB.sv(60)
+#    Time: 9550 ns  Iteration: 0  Instance: /SPI_TB
+# Break in Module SPI_TB at tb/SPI_TB.sv line 60
+# End time: 23:59:01 on Mar 15,2026, Elapsed time: 0:13:45
+# Errors: 0, Warnings: 3

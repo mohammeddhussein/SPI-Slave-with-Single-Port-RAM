@@ -1,0 +1,10 @@
+work/
+*.mti
+*.mpf
+*visualizer*
+*.vcd
+*.wlf
+*.log
+.visualizer/
+*.db
+*.txt
