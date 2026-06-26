@@ -7,3 +7,4 @@
 *.mem linguist-vendored
 *.hex linguist-vendored
 *.do linguist-vendored
+*.dat linguist-vendored
